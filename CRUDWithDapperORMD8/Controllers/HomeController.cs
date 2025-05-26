@@ -1,102 +1,167 @@
 using System.Diagnostics;
 using System.Reflection;
-using CRUDWithDapperORMD8.Data;
 using CRUDWithDapperORMD8.Models;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
+using CRUDWithDapperORMD8.Models.DTOs;
+using CRUDWithDapperORMD8.Repos.IRepository;
 
 namespace CRUDWithDapperORMD8.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly DBcontext _dbContext;
+        private readonly IBookRepository _bookRepository;
 
-        public HomeController(ILogger<HomeController> logger, DBcontext dbcontext)
+        public HomeController(ILogger<HomeController> logger, IBookRepository bookRepository)
         {
             _logger = logger;
-            _dbContext = dbcontext;
+            _bookRepository = bookRepository;
         }
 
-
-        public IActionResult GetAll()
+        public IActionResult Index()
         {
-            using var conn = _dbContext.Connection;
-            var books = conn.Query<Book>("SELECT * FROM Books");
-            return View(books);
+            return View("Index");
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllBooksAsync()
+        {
+            try
+            {
+                var books = await _bookRepository.GetAllBooksAsync();
+                if (books == null)
+                {
+                    ModelState.AddModelError("", "No books found");
+                    return View(Enumerable.Empty<BookDTO>());
+                }
+                return View("Index",books);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while fetching books");
+                _logger.LogError(ex, "Error fetching books");
+                return View("Index",Enumerable.Empty<BookDTO>());
+            }
         }
 
-        public IActionResult GetById(int id)
+        [HttpGet]
+        public async Task<IActionResult> GetBookByIdAsync(int id)
         {
             if (id <= 0)
             {
                 ModelState.AddModelError("", "Invalid book ID");
                 return View("Index");
             }
-            using var conn = _dbContext.Connection;
-            string sql = "SELECT * FROM Books WHERE Id = @Id";
-            var book = conn.QuerySingleOrDefault<Book>(sql, new { Id = id });
-            if (book == null)
+            try
             {
-                ModelState.AddModelError("", "Book not found");
+                BookDTO book = await _bookRepository.GetBookByIdAsync(id);
+                if (book == null)
+                {
+                    ModelState.AddModelError("", "Book not found");
+                    return View("Index");
+                }
+                return View(book);
+
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while fetching the book");
+                _logger.LogError(ex, "Error fetching book with ID {Id}", id);
                 return View("Index");
             }
-            return View(book);
         }
+
         //we define the view method same name as the actual view for redirection.
-        public IActionResult Create()
+        public IActionResult AddBookAsyncView()
         {
             return View();
         }
-        // we call the method the same name as the view for redirection.
+
         [HttpPost]
-        public IActionResult Create(Book book)
+        public async Task<IActionResult> AddBookAsync(BookDTO book)
         {
-            using var conn = _dbContext.Connection;
-            string sql = "INSERT INTO Books (Title, Author, Price) OUTPUT INSERTED.Id VALUES (@Title, @Author, @Price)";
-            var insertedId = conn.Execute(sql, new { Title = book.Title, Author = book.Author, Price = book.Price });
-            // int id = Convert.ToInt32(conn.ExecuteScalar(sql, new { Title = title, Author = author, Price = price })); whats the difference between using AddWithParameters and Dapper Dynamic Parameters?
-            return View(book);
+            if (book == null)
+            {
+                ModelState.AddModelError("", "Book not found");
+                return View("Index");
+            }
+            try
+            {
+                bool isAdded = await _bookRepository.AddBookAsync(book);
+                if (isAdded)
+                {
+                    return RedirectToAction("GetAllBooksAsync");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Book creation failed");
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while creating the book");
+                _logger.LogError(ex, "Error creating book");
+            }
+
+            return RedirectToAction("GetAllBooksAsync");
         }
 
-        public IActionResult Edit (Book book)
+        //Update
+        [HttpPost]
+        public async Task<IActionResult> UpdateBookAsync(Book book)
         {
             if (book == null)
             {
                 ModelState.AddModelError("", "Book not found");
             }
-            using var conn = _dbContext.Connection;
-            string sql = "UPDATE Books SET Title = @Title, Author = @Author, Price = @Price WHERE Id = @Id";
-            var updatedId = conn.Execute(sql, new { Title = book.Title, Author = book.Author, Price = book.Price, Id = book.Id });
-            if(updatedId > 0)
+            try
             {
-                return RedirectToAction("Index");
+                bool isUpdated = await _bookRepository.UpdateBookAsync(book);
+                if (isUpdated)
+                {
+                    return RedirectToAction("GetAllBooksAsync");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Book update failed");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError("", "Update failed");
+                ModelState.AddModelError("", "An error occurred while updating the book");
+                _logger.LogError(ex, "Error updating book with ID {Id}", book.Id);
             }
+
             return View(book);
         }
-
-        public IActionResult DeleteBook(int id)
+        //Delete
+        [HttpPost]
+        public async Task<IActionResult> DeleteBookAsync(int id)
         {
             if (id <= 0)
             {
                 ModelState.AddModelError("", "Invalid book ID");
                 return View("Index");
             }
-            using var conn = _dbContext.Connection;
-            string sql = "DELETE FROM Books WHERE Id = @Id";
-            var deletedId = conn.Execute(sql, new { Id = id });
-            if (deletedId > 0)
+            try
             {
-                return RedirectToAction("Index");
+                bool isDeleted = await _bookRepository.DeleteBookAsync(id);
+                if (isDeleted)
+                {
+                    return RedirectToAction("GetAllBooksAsync");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Book deletion failed");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ModelState.AddModelError("", "Delete failed");
+                ModelState.AddModelError("", "An error occurred while deleting the book");
+                _logger.LogError(ex, "Error deleting book with ID {Id}", id);
             }
+
             return View();
         }
 

@@ -1,5 +1,7 @@
 using CRUDWithDapperORMD8.Data;
-
+using System.Reflection;
+using CRUDWithDapperORMD8.Repos.IRepository;
+using CRUDWithDapperORMD8.Repos.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddSingleton<DBcontext>();
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+// i want to add dependancy for my repository
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 
