@@ -17,7 +17,11 @@ namespace CRUDWithDapperORMD8.Repos.Repositories
             _dbContext = dbContext;
             _mapper = mapper;
         }
-
+        /// <summary>
+        /// GetAllBooksAsync method to fetch all books from the database.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<IEnumerable<BookDTO>> GetAllBooksAsync()
         {
             try
@@ -36,6 +40,13 @@ namespace CRUDWithDapperORMD8.Repos.Repositories
                 throw new Exception("An error occurred while fetching books", ex);
             }
         }
+
+        /// <summary>
+        /// GetBookByIdAsync method to fetch a book by its ID.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<BookDTO> GetBookByIdAsync(int id)
         {
             try
@@ -56,6 +67,13 @@ namespace CRUDWithDapperORMD8.Repos.Repositories
                 throw new Exception("An error occurred while fetching the book", ex);
             }
         }
+
+        /// <summary>
+        /// AddBookAsync method to add a new book to the database.
+        /// </summary>
+        /// <param name="book"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<bool> AddBookAsync(BookDTO book)
         {
             try
@@ -71,8 +89,13 @@ namespace CRUDWithDapperORMD8.Repos.Repositories
                 throw new Exception("An error occurred while adding the book", ex);
             }
         }
-        
-        
+
+        /// <summary>
+        /// UpdateBookAsync method to update an existing book in the database.
+        /// </summary>
+        /// <param name="book"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<bool> UpdateBookAsync(Book book)
         {
             try
@@ -97,6 +120,12 @@ namespace CRUDWithDapperORMD8.Repos.Repositories
             }
         }
 
+        /// <summary>
+        /// DeleteBookAsync method to delete a book by its ID.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<bool> DeleteBookAsync(int id)
         {
             try

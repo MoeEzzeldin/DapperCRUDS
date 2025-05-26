@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\mappings\\bookmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\mappings\\bookmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,28 +27,12 @@
       "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\repos\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\repos\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\repos\\irepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\repos\\irepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|c:\\users\\ahmed\\workspace\\repositories\\dappercruds\\crudwithdapperormd8\\mappings\\bookmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EBBC0EE-8497-4758-8A8C-2D343FBEB08E}|CRUDWithDapperORMD8\\CRUDWithDapperORMD8.csproj|solutionrelative:crudwithdapperormd8\\mappings\\bookmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 306,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,26 +50,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Views\\Home\\Create.cshtml",
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Views\\Home\\Create.cshtml",
               "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Views\\Home\\Create.cshtml",
               "RelativeToolTip": "CRUDWithDapperORMD8\\Views\\Home\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-26T00:00:34.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Repos\\Repositories\\BookRepository.cs",
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Repos\\Repositories\\BookRepository.cs",
               "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Repos\\Repositories\\BookRepository.cs",
               "RelativeToolTip": "CRUDWithDapperORMD8\\Repos\\Repositories\\BookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T22:00:32.652Z",
               "EditorCaption": ""
@@ -82,57 +82,59 @@
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "CRUDWithDapperORMD8\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-24T20:43:01.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "BookMapper.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Mappings\\BookMapper.cs",
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Mappings\\BookMapper.cs",
               "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Mappings\\BookMapper.cs",
               "RelativeToolTip": "CRUDWithDapperORMD8\\Mappings\\BookMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T20:30:04.742Z"
+              "WhenOpened": "2025-05-24T20:30:04.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "DBcontext.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Data\\DBcontext.cs",
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Data\\DBcontext.cs",
               "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Data\\DBcontext.cs",
               "RelativeToolTip": "CRUDWithDapperORMD8\\Data\\DBcontext.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAawBAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T02:07:49.288Z"
+              "WhenOpened": "2025-05-17T02:07:49.288Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 216,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CRUDWithDapperORMD8\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowEoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T02:04:14.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Repos\\IRepository\\IBookRepository.cs",
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Repos\\IRepository\\IBookRepository.cs",
@@ -140,17 +142,18 @@
               "RelativeToolTip": "CRUDWithDapperORMD8\\Repos\\IRepository\\IBookRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T21:59:26.568Z"
+              "WhenOpened": "2025-05-25T21:59:26.568Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Program.cs",
               "RelativeDocumentMoniker": "CRUDWithDapperORMD8\\Program.cs",
               "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\DapperCRUDS\\CRUDWithDapperORMD8\\Program.cs",
               "RelativeToolTip": "CRUDWithDapperORMD8\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T18:24:33.899Z",
               "EditorCaption": ""
